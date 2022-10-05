@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="bootstrap-5.2.1-dist\css\bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="bootstrap-5.2.1-dist\js\bootstrap.js"></script> 
+</head>
+<body style="background-color: gray">
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-muted" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-muted" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="text-center bg-primary border border-gray">
+      <h2>Contact Information</h2>
+    </div>
+    <form class="mx-auto" style="width: 300px" action="/results.html" method="get">
+      <div class="mb-3">
+        <label for="InputName" class="form-label">Name</label>
+        <input type="text" class="form-control" name="Name" id="InputName" required> 
+      </div>
+      <div class="mb-3">
+        <label for="InputEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" name="Email" id="InputEmail" required>
+      </div>
+      <div class="mb-3 form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" name="Message" id="Message" required></textarea>
+        <label for="Message">Place comment here</label>
+      </div>   
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" name="CheckBox" id="Check1" required>
+        <label class="form-check-label" for="Check1">Check this box out</label>
+      </div>       
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form> 
+</body>
+</html>
